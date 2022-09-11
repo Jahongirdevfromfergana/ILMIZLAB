@@ -1,0 +1,143 @@
+plugins {
+
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+//    id 'com.google.gms.google-services'
+//    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+//    id 'kotlin-android-extensions'
+
+}
+android {
+    compileSdk 33
+    defaultConfig {
+        applicationId "com.example.ilmizlab"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures{
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    testImplementation 'junit:junit:'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.2'
+    implementation "com.google.android.gms:play-services-location:20.0.0"
+
+
+
+//    implementation 'com.synnapps:carouselview:0.1.5'
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.github.pinball83:masked-edittext:1.0.4'
+
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'com.google.android.material:material:1.7.0-alpha02'
+
+    implementation 'com.synnapps:carouselview:0.1.5'
+
+    def retrofit_version = "2.9.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+
+    //chucker uchun
+    debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
+    releaseImplementation "com.github.chuckerteam.chucker:li brary-no-op:3.5.2"
+
+
+    //viewModel uchun
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    // syncroon jarayon uchun
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.18'
+
+    //multidex
+    implementation "androidx.multidex:multidex:2.0.1"
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //chucker uchun
+    debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
+    releaseImplementation "com.github.chuckerteam.chucker:li brary-no-op:3.5.2"
+
+//    // dagger uchun
+
+    /* Dagger2 - default dependency */
+    kapt 'com.google.dagger:dagger-compiler:2.40.5'
+
+
+    implementation "org.greenrobot:eventbus:3.3.1"
+
+
+//
+    implementation 'com.google.firebase:firebase-auth:21.0.5'
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+
+    implementation 'com.jpardogo.googleprogressbar:library:1.2.0'
+
+//
+//    // Import the Firebase BoM
+//    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+//
+//    // When using the BoM, you don't specify versions in Firebase library dependencies
+//
+//    // Declare the dependency for the Firebase SDK for Google Analytics
+//    implementation 'com.google.firebase:firebase-analytics-ktx'
+//
+//    // Declare the dependencies for any other desired Firebase products
+////     For example, declare the dependencies for Firebase Authentication and Cloud Firestore
+//    implementation 'com.google.firebase:firebase-auth-ktx'
+//    implementation 'com.google.firebase:firebase-firestore-ktx'
+
+//    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation "com.dmitryborodin:pdfview-android:1.1.0"
+
+
+
+
+
+
+
+
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+//    instead use
+    implementation "com.dmitryborodin:pdfview-android:1.1.0"
+
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+}

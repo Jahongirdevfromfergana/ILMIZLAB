@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+  <item android:title="@string/app_name">
+      <menu>
+          <item
+              android:id="@+id/Home"
+              android:title="Profilni tahrirlash"
+              android:icon="@drawable/ic__092564_profile_about_mobile_ui_user_icon"
+              />
+          <item
+              android:id="@+id/Hom"
+              android:title="Profilni tahrirlash"
+              android:icon="@drawable/ic__092564_profile_about_mobile_ui_user_icon"
+              />
+          <item
+              android:id="@+id/Home"
+              android:title="Profilni tahrirlash"
+              android:icon="@drawable/ic__092564_profile_about_mobile_ui_user_icon"
+              />
+          <item
+              android:id="@+id/Home"
+              android:title="Profilni tahrirlash"
+              android:icon="@drawable/ic__092564_profile_about_mobile_ui_user_icon"
+              />
+          <item
+              android:id="@+id/Home"
+              android:title="Profilni tahrirlash"
+              android:icon="@drawable/ic__092564_profile_about_mobile_ui_user_icon"
+              />
+          <item
+              android:id="@+id/Home"
+              android:title="Profilni tahrirlash"
+              android:icon="@drawable/ic__092564_profile_about_mobile_ui_user_icon"
+              />
+      </menu>
+  </item>
+
+
+</menu>

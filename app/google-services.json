@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "113352960804",
+    "firebase_url": "https://ilm-izlab-f1736-default-rtdb.firebaseio.com",
+    "project_id": "ilm-izlab-f1736",
+    "storage_bucket": "ilm-izlab-f1736.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113352960804:android:07ddcf1937feadc6c4a1b1",
+        "android_client_info": {
+          "package_name": "com.example.ilmizlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113352960804-32av3kkf0vpi9gkd5qmt95d0jcjvjhg5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNjlwGBzq3C8yvUL3tNE0IbapXGCdsLlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113352960804-32av3kkf0vpi9gkd5qmt95d0jcjvjhg5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

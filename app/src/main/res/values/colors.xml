@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0D185A</color>
+    <color name="colorPrimaryDark">#091349</color>
+    <color name="colorAccent">#1221BF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#F1F0F0</color>
+    <color name="icon_gray">#9E9A9A</color>
+    <color name="green">#2BA303</color>
+
+
+    <color name="whiteWithOpacity">#33FFFFFF</color>
+    <color name="whiteWithHalfOpacity">#80FFFFFF</color>
+    <color name="mainTextColor">#130E51</color>
+    <color name="chipItemBackgroundColor">#1AADA7FE</color>
+    <color name="chipTextColor">#5D50FE</color>
+    <color name="yellow">#FFC107</color>
+    <color name="red">#AE2B22</color>
+
+</resources>
