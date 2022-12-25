@@ -18,7 +18,7 @@ data class TrainingCenterModel(
     val rating: Double,
     val rating_count: Int,
     val images: List<String>,
-    val subsribers_count: Int,
+    val subscribers_count: Int,
     val district: District,
     val region: Region,
     val courses: List<CoursesModel>

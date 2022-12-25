@@ -60,16 +60,12 @@ class TrainingRepository {
                     }
                     override fun onError(e: Throwable) {
                         error.value = e.localizedMessage
-
                     }
-
                     override fun onComplete() {
-
                     }
                 })
         )
     }
-
     fun getTopCenter(
         request: GetCenterRequest, error: MutableLiveData<String>,
         centerData: MutableLiveData<List<TrainingCenterModel>>
@@ -97,7 +93,6 @@ class TrainingRepository {
                 })
         )
     }
-
     fun getCenter(
         request: GetCenterRequest, error: MutableLiveData<String>,
         centerData: MutableLiveData<List<TrainingCenterModel>>
@@ -169,14 +164,10 @@ class TrainingRepository {
                             error.value = t.message
                         }
                     }
-
                     override fun onError(e: Throwable) {
                         error.value = e.localizedMessage
-
                     }
-
                     override fun onComplete() {
-
                     }
                 })
         )
@@ -201,11 +192,8 @@ class TrainingRepository {
 
                     override fun onError(e: Throwable) {
                         error.value = e.localizedMessage
-
                     }
-
                     override fun onComplete() {
-
                     }
                 })
         )
@@ -229,9 +217,7 @@ class TrainingRepository {
                     }
                     override fun onError(e: Throwable) {
                         error.value = e.localizedMessage
-
                     }
-
                     override fun onComplete() {
 
                     }

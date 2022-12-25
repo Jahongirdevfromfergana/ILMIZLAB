@@ -6,31 +6,25 @@ import io.reactivex.Observable
 import retrofit2.http.*
 
 interface ApiService {
-
     @Headers(
-        "key: oNDC06WChdNiLZtat9a6mAUC9k2zc0"
+        "Key: oNDC06WChdNiLZtat9a6mAUC9k2zc0"
     )
-
     @GET("offers")
     fun getOffers(): Observable<BaseResponseModel<List<OfferModel>>>
-
     @Headers(
-        "key: oNDC06WChdNiLZtat9a6mAUC9k2zc0"
+        "Key: oNDC06WChdNiLZtat9a6mAUC9k2zc0"
     )
     @GET("categories")
     fun getCategories(): Observable<BaseResponseModel<List<CategoryModel>>>
 
     @Headers(
-        "key: oNDC06WChdNiLZtat9a6mAUC9k2zc0"
+        "Key: oNDC06WChdNiLZtat9a6mAUC9k2zc0"
     )
-
     @POST("training_centers")
     fun getTrainingCenterSearch(@Body request: GetCenterRequest): Observable<BaseResponseModel<List<TrainingCenterModel>>>
-
     @Headers(
-        "key: oNDC06WChdNiLZtat9a6mAUC9k2zc0"
+        "Key: oNDC06WChdNiLZtat9a6mAUC9k2zc0"
     )
-
     @POST("training_centers")
     fun getTrainingCenter(@Body request: GetCenterRequest): Observable<BaseResponseModel<List<TrainingCenterModel>>>
 

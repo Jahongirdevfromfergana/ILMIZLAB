@@ -12,12 +12,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 object NetworkManager {
 
     var retrofit: Retrofit? = null
-
     var api: ApiService? = null
 
     fun getApiService(): ApiService {
         if (api == null) {
-
             val okHttpClient = OkHttpClient.Builder()
             if (BuildConfig.DEBUG) {
                 okHttpClient.addInterceptor(ChuckerInterceptor.Builder(MyApp.app).build())

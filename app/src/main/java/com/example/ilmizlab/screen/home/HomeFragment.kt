@@ -58,8 +58,8 @@ class HomeFragment : Fragment() {
             Toast.makeText(requireActivity(), it, Toast.LENGTH_LONG).show()
         })
         viewModel.offersData.observe(requireActivity(), Observer {
-            binding.carouselView.setImageListener { position, imageView ->
-                Glide.with(imageView).load("https://demo-ilm-izlab.herokuapp.com/${it[position].image}")
+          binding.carouselView.setImageListener { position, imageView ->
+                Glide.with(imageView).load("http://demo.ilm-izlab.uz/${it[position].image}")
                     .into(imageView)
             }
             binding.carouselView.pageCount = it.count()

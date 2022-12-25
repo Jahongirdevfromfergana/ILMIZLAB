@@ -29,7 +29,7 @@ class CategoryAdapter(
             callback.onClickItem(item)
         }
         holder.binding.tvCategoryName.text = item.title
-        Glide.with(holder.itemView.context).load(Constants.IMAGE_HOST + item.icon).into(holder.binding.tvCategoryIcon)
+    Glide.with(holder.itemView.context).load(Constants.IMAGE_HOST + item.icon).into(holder.binding.tvCategoryIcon)
     }
 
     override fun getItemCount(): Int = items.size

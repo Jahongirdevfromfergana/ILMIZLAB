@@ -40,7 +40,6 @@
                         android:scrollbarAlwaysDrawHorizontalTrack="true"
                         app:fillColor="#DDA704"
                         app:pageColor="@color/colorPrimaryDark"
-                        app:pageTransformInterval="@integer/material_motion_duration_long_2"
                         app:slideInterval="3000"
                         app:snap="false"
                         app:strokeColor="@color/colorPrimaryDark"

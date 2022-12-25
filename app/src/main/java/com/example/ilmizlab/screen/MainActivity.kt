@@ -52,10 +52,10 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
-        binding.logIn.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
-
-        }
+//        binding.logIn.setOnClickListener {
+//            startActivity(Intent(this, LoginActivity::class.java))
+//
+//        }
         binding.navAbout.setOnClickListener {
             startActivity(Intent(this, AboutActivity::class.java))
 
@@ -153,4 +153,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    
 }

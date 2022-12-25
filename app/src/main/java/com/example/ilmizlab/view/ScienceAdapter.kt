@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.ilmizlab.databinding.ScienceItemLayoutBinding
 import com.example.ilmizlab.models.ScienceModel
+import com.example.ilmizlab.utils.Constants
 
 class ScienceAdapter(
     val items: List<ScienceModel>
@@ -19,7 +20,7 @@ class ScienceAdapter(
         val item = items[position]
         holder.binding.tvScienceName.text = item.title
 
-        Glide.with(holder.itemView.context).load("https://demo-ilm-izlab.herokuapp.com/${item.icon}").into(holder.binding.tvScienceIcon)
+        Glide.with(holder.itemView.context).load(Constants.IMAGE_HOST + item.icon).into(holder.binding.tvScienceIcon)
     }
     override fun getItemCount(): Int = items.size
 

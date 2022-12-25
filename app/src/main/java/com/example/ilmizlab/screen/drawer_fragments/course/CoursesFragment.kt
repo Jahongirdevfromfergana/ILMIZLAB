@@ -19,14 +19,10 @@ class CoursesFragment : Fragment() {
     lateinit var item: CoursesModel
     lateinit var viewModel: MainViewModel
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-
     }
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -39,8 +35,7 @@ class CoursesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
 
-        binding.recyclerCourse.layoutManager =
-            LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+        binding.recyclerCourse.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
 
         viewModel.coursesData.observe(requireActivity(), Observer {
             binding.recyclerCourse.adapter = CourseAdapter(it)
